@@ -1,6 +1,6 @@
 import Link from "next/link"
 import { Button } from "@/components/ui/button"
-import { House, Plus, Timer } from "lucide-react"
+import { House, Plus, Timer, Watch } from "lucide-react"
 
 export function Navbar() {
   return (
@@ -17,6 +17,9 @@ export function Navbar() {
         </Link>
         <Link href="/manual-control" passHref>
           <Button variant="ghost"><Plus />Agregar Tiempo</Button>
+        </Link>
+        <Link href="/onlyCounter" passHref>
+          <Button variant="ghost"><Watch />Solo Reloj</Button>
         </Link>
       </div>
     </nav>
